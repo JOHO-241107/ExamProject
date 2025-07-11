@@ -15,7 +15,7 @@ public abstract class Monster implements Creature {
         return this.hp > 0;
     }
 
-    public void showStats() {
+    public void showStatus() {
         System.out.println(getName() + getSuffix() + ": HP" + getHp());
     }
 
