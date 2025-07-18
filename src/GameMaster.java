@@ -42,10 +42,11 @@ public class GameMaster {
         }
 
         System.out.println("\nダメージを受けた勇者が突然光だした！");
-        SuperHero superHero = new SuperHero(hero);
         System.out.println("勇者はスーパーヒーローに進化した！");
+        SuperHero superHero = new SuperHero(hero);
+        party.set(0, superHero);
         for(Monster monster : monsters) {
-            superHero.attack(monster);
+            party.get(0).attack(monster);
         }
 
         System.out.println("\n---味方パーティ最終ステータス---");
