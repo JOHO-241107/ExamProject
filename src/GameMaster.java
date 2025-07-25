@@ -69,5 +69,6 @@ public class GameMaster {
                 System.out.println("討伐済み");
             }
         }
+
     }
 }
